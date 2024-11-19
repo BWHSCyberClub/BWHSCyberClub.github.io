@@ -8,6 +8,8 @@ const title7 = "You might even Win!!"
 
 document.title = title1;
 
+//Title Code
+
 function changeTitle() {
    switch (document.querySelector("title").innerHTML) {
     case title1: document.title = title2;
@@ -29,3 +31,37 @@ function changeTitle() {
 };
 
     setInterval(changeTitle, 5000)
+
+   //Next Code on Animation
+   // Fix This Code
+
+   let start = document.getElementById("animate"); // remember start time
+
+   let timer = setInterval(function() {
+    1
+     let timePassed = Date.now() - start;
+   
+     if (timePassed >= 1000) {
+       clearInterval(timer); // finish the animation after 2 seconds
+       return;
+     }
+   
+     // draw the animation at the moment timePassed
+     draw(timePassed);
+   
+   }, 20);
+   
+   // as timePassed goes from 0 to 2000
+   // left gets values from 0px to 400px
+   function draw(timePassed) {
+     train.style.left = timePassed / 5 + 'px';
+   }
+      
+    function sidebarAnimationClose() {
+      if (pos == 0) {
+          null
+        } else {
+          pos = pos - 20;
+          elem.style.left = pos - 'px';
+        };
+    };
