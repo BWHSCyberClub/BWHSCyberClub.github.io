@@ -35,13 +35,13 @@ function changeTitle() {
    //Next Code on Animation
    // Fix This Code
 
-   let start = document.getElementById("animate"); // remember start time
+   let start = Date.now(); // remember start time
 
    let timer = setInterval(function() {
-    1
+
      let timePassed = Date.now() - start;
    
-     if (timePassed >= 1000) {
+     if (timePassed >= 0) {
        clearInterval(timer); // finish the animation after 2 seconds
        return;
      }
@@ -57,7 +57,7 @@ function changeTitle() {
      train.style.left = timePassed / 5 + 'px';
    }
       
-    function sidebarAnimationClose() {
+    function sidebarAnimationClose2() {
       if (pos == 0) {
           null
         } else {
@@ -65,3 +65,28 @@ function changeTitle() {
           elem.style.left = pos - 'px';
         };
     };
+
+    let animationLeft = document.getElementById("sidebar").style.left
+
+    function sidebarTimer() {setInterval(function() {
+      if (animationLeft >= 0) clearInterval(sidebarTimer);
+      else animationLeft++
+    }, 20);
+  };
+
+  function sidebarAnimationOpen() {
+    document.getElementById("sidebar").animate([
+    {  left: -181  },
+    {  left: 0}
+    ], 2000)
+
+    return;
+};
+
+function sidebarAnimationClose() {
+  document.getElementById("sidebar").animate([
+  {  left: 0  },
+  {  left: -181}
+  ], 2000)
+
+};

@@ -6,41 +6,41 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
-* {
+  * {
     width: auto;
     color: darkorange;
     background-image: url('https://iili.io/25HPGJn.png');
     background-repeat: no-repeat;
-    background-size: 75%;
-    background-position-x: 250px;
+    background-size: 80%;
+    background-position-x: 230px;
     background-position-y: -120px;
     background-color: blue;
 }
 
 t1 {
-    position: absolute;
     text-align: center;
-    width: 99%;
-    font-size: 66px;
+    width: 100%;
+    font-size: 66.2px;
     font-family: 'Share Tech Mono';
     font-weight: bold;
-    margin-top: -75px;
+    margin-top: -70px;
+    text-decoration: underline;
+    text-decoration:black;
 }
-/* Fix This code for animation*/
-#container {
-    position: relative;
-    width: 200px;
-    height: 637px;
-    margin-top: 68px;
-    margin-left: -8px;
+#sidebar {
+    text-align: center;
     background-color: darkorange;
-}
-
-#animate {
     position: absolute;
+    box-align: left;
+    height: 800px;
     width: 200px;
-    height: 648px;
-    margin-top: -640px;
-    margin-left: -200px;
+    left: -181px;
+}
+#sidebarContent {
+    color: blue;
     background-color: darkorange;
+    font-size: 20px
+}
+.resourceLabel {
+    font-size: 40px;
 }
