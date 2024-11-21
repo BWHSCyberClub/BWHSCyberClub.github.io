@@ -36,11 +36,14 @@ t1 {
     width: 200px;
     left: -181px;
 }
-#sidebarContent {
+
+.sidebarContent {
     color: blue;
     background-color: darkorange;
-    font-size: 20px
+    font-size: 20px;
 }
-.resourceLabel {
+
+#resourceLabel {
     font-size: 40px;
 }
+
