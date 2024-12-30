@@ -8,19 +8,17 @@
 
   * {
     width: auto;
-    color: darkorange;
-    background-image: url('https://iili.io/25HPGJn.png');
+    background-image: url('https://iili.io/21Ma4kl.png');
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position-x: 230px;
-    background-position-y: -120px;
-    background-color: blue;
+    background-position-x: 0px;
+    background-position-y: 0px;
 }
 
 t1 {
     text-align: center;
     width: 100%;
-    font-size: 66.2px;
+    font-size: 66px;
     font-family: 'Share Tech Mono';
     font-weight: bold;
     margin-top: -70px;
@@ -35,6 +33,7 @@ t1 {
     height: 800px;
     width: 200px;
     left: -181px;
+    border-radius: 28px
 }
 
 .sidebarContent {

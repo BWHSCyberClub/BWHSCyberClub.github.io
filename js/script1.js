@@ -73,20 +73,3 @@ function changeTitle() {
       else animationLeft++
     }, 20);
   };
-
-  function sidebarAnimationOpen() {
-    document.getElementById("sidebar").animate([
-    {  left: -181  },
-    {  left: 0}
-    ], 1000)
-
-    return;
-};
-
-function sidebarAnimationClose() {
-  document.getElementByIde("sidebar").animate([
-  {  left: 0  },
-  {  left: -181}
-  ], 1000)
-
-};
