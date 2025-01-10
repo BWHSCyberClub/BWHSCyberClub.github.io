@@ -35,20 +35,30 @@ h1 {
     box-align: left;
     height: 600px;
     width: 200px;
-    left: -181px;
+    left: -160px;
     top: 10%;
     border-radius: 28px;
     transition: left 1s;
+    text-align: center;
 }
 
 #sidebar:hover {
     left: 0px;
 }
 
-.sidebarContent {
-    color: blue;
+.sidebar-label {
+    position: relative;
+    color: black;
     background-color: darkorange;
-    font-size: 20px;
+    font-size: 30px;
+    width: 144px;
+    left: 27px;
+    top: 5px;
+}
+
+.sidebar-content {
+    text-align: left;
+    font-size: 15px;
 }
 
 #resourceLabel {
