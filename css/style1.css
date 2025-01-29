@@ -13,7 +13,12 @@
     background-size: 80%;
     background-position-x: 125px;
     background-position-y: 25px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: #f0f4f8; /* Light grey-blue background */
+    color: #333; /* Dark text for better readability */
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -41,39 +46,102 @@ h2{
 }
 
 #sidebar {
-    text-align: center;
-    background-color: darkorange;
-    position: absolute;
-    box-align: left;
-    height: 600px;
-    width: 200px;
+    position: fixed;
     left: -160px;
     top: 10%;
-    border-radius: 28px;
-    transition: left 1s;
+    width: 200px;
+    height: 100%;
+    background-color: #1e3a8a; /* Dark blue background */
+    border-radius: 0 28px 28px 0;
+    transition: left 0.5s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     text-align: center;
+    padding-top: 20px;
 }
 
 #sidebar:hover {
-    left: 0px;
+    left: 0;
 }
 
 .sidebar-label {
     position: relative;
-    color: black;
-    background-color: darkorange;
-    font-size: 30px;
-    width: 144px;
-    left: 27px;
-    top: 5px;
+    color: white; /* White text for better contrast */
+    background-color: #f97316; /* Orange background */
+    font-size: 24px;
+    width: 160px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar-content {
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
+    color: white; /* White text for better contrast */
+    padding: 10px;
 }
 
 #resourceLabel {
     font-size: 40px;
 }
+#sidebar a {
+    color: #f97316; /* Orange link color */
+    text-decoration: none; /* Remove underline */
+}
 
+#sidebar a:hover {
+    color: #bd4f00; /* Dark blue color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer {
+    background-color: #1e3a8a; /* Dark blue background */
+    color: white; /* White text for better contrast */
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #f97316; /* Orange top border */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 16px;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column; /* Arrange photos in a column */
+    align-items: flex-end; /* Align photos to the right side */
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for photo container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content; /* Adjust the width to fit the content */
+    margin-left: auto; /* Push the container to the right */
+}
+
+.photo-area {
+    text-align: center;
+}
+
+.photo-area img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
