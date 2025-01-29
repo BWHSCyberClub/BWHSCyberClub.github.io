@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" conetent="width=device-width" />
+    <script src="js/script1.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="https://iili.io/25HPGJn.png"/>s
     <title>Cyber Patriot</title>
 </head>
 <body>
     <h1>Cyber Patriot</h1>
+        <h2 id="current_Date"></h2>
+        <script>
+            const d = new Date();
+             usabledate = d.toDateString()
+            document.getElementById("current_Date").innerHTML ="Today is " + usabledate;
+        </script>
+<div class="sidebar-container">
+    <div id="sidebar">
+        <button><a href="index.html" id="button">Home</a></button>
+        <div class="sidebar-label">Resources</div>
+        <ul class="sidebar-content">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="sidebar-label">Events</div>
+        <ul class="sidebar-content">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="sidebar-label">Info</div>
+        <ul class="sidebar-content">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

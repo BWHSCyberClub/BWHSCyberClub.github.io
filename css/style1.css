@@ -145,3 +145,27 @@ h2{
     font-size: 14px;
     color: #333;
 }
+#button {
+    display: inline-block; /* Make the link behave like a button */
+    background-color: #f97316; /* Orange background */
+    color: white !important; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+}
+
+#button:hover {
+    background-color: #bd4f00; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#button:active {
+    background-color: #a84300; /* Even darker orange on click */
+    transform: translateY(0); /* Reset lift on click */
+}
