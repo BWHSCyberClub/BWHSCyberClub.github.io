@@ -14,10 +14,11 @@
         <h1>
         Briar Woods High School Cyber Club
         </h1>
-      <p id="current_Date"></p>
+      <h2 id="current_Date"></h2>
         <script>
             const d = new Date();
-            document.getElementById("current_Date").innerHTML ="today is" + d;
+             usabledate =d.toDateString()
+            document.getElementById("current_Date").innerHTML ="Today is " + usabledate;
         </script>
 
         <!--- Fix This Animation Code-->

@@ -27,6 +27,18 @@ h1 {
     text-decoration:black;
     color: orange;
 }
+h2{
+    text-align: center;
+    width: 100%;
+    font-size: 56px;
+    font-family: 'Share Tech Mono';
+    font-weight: bold;
+    margin-top: -1%;
+    text-decoration: underline;
+    text-decoration:black;
+    color: orange;
+
+}
 
 #sidebar {
     text-align: center;
