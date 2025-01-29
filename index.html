@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <html lang="en-US">
-        
+            
         <head>
             <meta charset="UTF-8"/>
             <meta name="viewport" conetent="width=device-width" />
@@ -11,25 +11,31 @@
         </head>
     <body>
          
-        <t1>
+        <h1>
         Briar Woods High School Cyber Club
-        </t1>
+        </h1>
+      <p id="current_Date"></p>
         <script>
             const d = new Date();
-            document.getElementById("demo").innerHTML ="today is" + d;
+            document.getElementById("current_Date").innerHTML ="today is" + d;
         </script>
+
         <!--- Fix This Animation Code-->
         
-        <div id="sidebar" onmouseover="sidebarAnimationOpen()" onmouseout="sidebarAnimationClose()">
-            <p1 class="sidebarContent" id="resourceLabel">Resources</p1>
-            <br>
-            <ul class="sidebarContent">
-                <li class="sidebarContent">Cyber Patriot</li>
-                <li class="sidebarContent"></li>
+        <div class="sidebar-container">
+            <div id="sidebar">
+                <div class="sidebar-label">Resources</div>
+                <ul class="sidebar-content">
+                    <li><a href="cyberPatriot.html">Cyber Patriot</a></li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+            </div>
+        </div>
 
-            </ul>
-
-        </div>  
+       <div style="text-align:right;">
+            <img src="white.jpg" height="300px" width="200px" >
+        <div class="caption">(this is a caption)</div>
 
     </body>
     </html>
