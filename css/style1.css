@@ -95,6 +95,15 @@ h2{
     text-decoration: underline; /* Underline on hover */
 }
 
+.footer{
+    background-color: #1e3a8a; /* Dark blue background */
+    color: white; /* White text for better contrast */
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #f97316; /* Orange top border */
+    width: 100%; /* Ensure the footer takes up the full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
 .footer-content {
     max-width: 800px;
     margin: 0 auto;
