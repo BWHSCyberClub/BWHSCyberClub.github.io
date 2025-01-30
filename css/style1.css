@@ -82,9 +82,7 @@ h2{
     padding: 10px;
 }
 
-#resourceLabel {
-    font-size: 40px;
-}
+
 #sidebar a {
     color: #f97316; /* Orange link color */
     text-decoration: none; /* Remove underline */
@@ -199,4 +197,34 @@ h2{
 #button:active {
     background-color: #a84300; /* Even darker orange on click */
     transform: translateY(0); /* Reset lift on click */
+}
+
+/* desscription */
+.main-content {
+    flex: 1; /* Take up the remaining space */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+    
+}
+
+.description-box {
+    background-color: #f0f4f8; /* Light grey-blue background */
+    color: #333; /* Dark text for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.description-box h3 {
+    margin-top: 0; /* Remove top margin */
+    font-size: 24px; /* Font size for the heading */
+   
+}
+
+.description-box p {
+    font-size: 16px; /* Font size for the paragraph */
+    line-height: 1.5; /* Line height for better readability */
+    
+
 }
