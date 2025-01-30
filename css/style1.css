@@ -141,11 +141,41 @@ h2{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.caption {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #333;
+.photo-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.photo-area1 {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+.photo-area1 img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff; /* White text */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif; /* Change the font */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: inline-block; /* Adjust the width to fit the content */
+}
+
+
+
 #button {
     display: inline-block; /* Make the link behave like a button */
     background-color: #f97316; /* Orange background */
