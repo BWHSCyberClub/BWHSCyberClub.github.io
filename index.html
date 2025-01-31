@@ -10,85 +10,92 @@
             <link rel="icon" type="image/x-icon" href="https://iili.io/25HPGJn.png"/>
         </head>
     <body>
-         
-        <h1>
-        Briar Woods High School Cyber Club
-        </h1>
-        <h2 id="current_Date"></h2>
-        <button></button>
-        <script>
-            const d = new Date();
-             usabledate = d.toDateString()
-            document.getElementById("current_Date").innerHTML ="Today is " + usabledate;
-        </script>
+        <div class="body">
+            
+            <h1>Briar Woods High School Cyber Club</h1>
+            <h2 id="current_date">
+                <script>
+                    const d = new Date();
+                    usabledate = d.toDateString()
+                    document.getElementById("current_date").innerHTML ="Today is " + usabledate;
+                </script>
+            </h2>
 
-
-        <!--- Fix This Animation Code-->
-        
-        <div class="sidebar-container">
-            <div id="sidebar">
-                <div class="sidebar-label">Resources</div>
-                <ul class="sidebar-content">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="sidebar-label">Events</div>
-                <ul class="sidebar-content">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="sidebar-label">Info</div>
-                <ul class="sidebar-content">
-                    <li><a href="PhotoArea.html">Photo Area</a></li>
-                    <li><a href="TimeLine.html">Timeline</a></li>
-                    <li></li>
-                <div class="sidebar-label">Subdivisions</div>
-                <ul class="sidebar-content">
-                    <li><a href="AI.html">AI</a></li>
-                    <li><a href="webdev.html">Web Development</a></li>
-                    <li><a href="cyberPatriot.html">Cyber Patriot</a></li>
-                </ul>
+            <div class="sidebar-container">
+                <div id="sidebar">
+                    <div class="sidebar-label">
+                        <button onclick="location.assign('resources')">
+                            <a href="resources.html">Resources</a>
+                        </button>
+                    </div>
+                    <div class="sidebar-label">
+                        <button onclick="location.assign('events')">
+                            <a href="events.html">Events</a>
+                        </button>
+                    </div>
+                    <div class="sidebar-label">
+                        <button onclick="location.assign('info')">
+                            <a href="info.html">Info</a>
+                        </button>
+                    </div>
+                        <div class="sidebar-label">
+                            <button onclick="location.assign('PhotoArea')">
+                                <a href="PhotoArea.html">Photo Area</a>
+                            </button>
+                        </div>
+                        <div class="sidebar-label">
+                            <button onclick="location.assign('TimeLine')">
+                                <a href="TimeLine.html">Timeline</a>
+                            </button>
+                        </div>
+                    <div class="sidebar-label">
+                        <button onclick="location.assign('subdivisions')">
+                            <a href="subdivisions.html">Subdivisions</a>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="main-content">
-            <div class="description-box">
-                <h3>Description</h3>
-                <p></p>
+            <div class="main-content">
+                <div class="description-box">
+                    <h3>Description</h3>
+                    <p></p>
+                </div>
             </div>
-        </div>
 
-        ...
-        <div style="text-align:right;">
-             <div class="photo-container">
-                 <div class="photo-area">
-                     <img src="photo1.jpg" height="300px" width="200px">
-                     <div class="caption">(Caption for photo 1)</div>
-                 </div>
-                 <div class="photo-area">
-                     <img src="photo2.jpg" height="300px" width="200px">
-                     <div class="caption">(Caption for photo 2)</div>
-                 </div>
-                 <div class="photo-area">
-                     <img src="photo3.jpg" height="300px" width="200px">
-                     <div class="caption">(Caption for photo 3)</div>
+            ...
+            <div style="text-align:right;">
+                 <div class="photo-container">
+                     <div class="photo-area">
+                         <img src="photo1.jpg" height="300px" width="200px">
+                         <div class="caption">(Caption for photo 1)</div>
+                     </div>
+                     <div class="photo-area">
+                         <img src="photo2.jpg" height="300px" width="200px">
+                         <div class="caption">(Caption for photo 2)</div>
+                     </div>
+                     <div class="photo-area">
+                         <img src="photo3.jpg" height="300px" width="200px">
+                         <div class="caption">(Caption for photo 3)</div>
+                     </div>
                  </div>
              </div>
-         </div>
 
- ...
+ ...    
 
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-label">Contact Us</div>
-                <div class="footer-text">chris.starke@lcps.org</div>
-                <div class="footer-text">
-                    <button><a id="button" href="https://www.lcps.org/o/bwh">Briar Woods High School</a></button>
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-label">Contact Us</div>
+                    <div class="footer-text">
+                        <a href="mailto:chris.starke@lcps.org"> chris.starke@lcps.org</a>
+                    </div>
+                    <div class="footer-text">
+                        <button>
+                            <a id="button" href="https://www.lcps.org/o/bwh">Briar Woods High School</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
     </body>
     </html>
