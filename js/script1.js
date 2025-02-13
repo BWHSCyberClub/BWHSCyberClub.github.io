@@ -32,3 +32,33 @@ function changeTitle() {
 
     setInterval(changeTitle, 5000);
     
+   //Pushing everything to the right code
+
+   const b = document.querySelector('.body');
+   const s = document.getElementById('sidebar');
+   if (s.style.left == 0) {
+      b.style.left = 200;
+   } else {
+
+   }
+
+// Date Script
+document.addEventListener("DOMContentLoaded", function() {
+    const d = new Date();
+    const usabledate = d.toDateString();
+    document.getElementById("current_date").innerHTML = "Today is " + usabledate;
+
+    // Sidebar toggle logic
+    const sidebar = document.getElementById('sidebar');
+    const body = document.querySelector('.body');
+
+    sidebar.addEventListener('mouseenter', function() {
+        sidebar.style.left = '0';
+        body.classList.add('sidebar-open');
+    });
+
+    sidebar.addEventListener('mouseleave', function() {
+        sidebar.style.left = '-160px';
+        body.classList.remove('sidebar-open');
+    });
+});
