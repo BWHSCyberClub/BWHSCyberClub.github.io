@@ -35,46 +35,84 @@ h2 {
 
 #sidebar {
     position: fixed;
-    left: -160px;
     top: 0;
-    width: 200px;
+    left: 0;
+    width: 60px; /* Initial width for icons only */
     height: 100%;
     background: #1e3a8a; /* Dark blue */
     color: white;
-    transition: left 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     padding-top: 20px;
     z-index: 1000;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column; /* Stack icons and links vertically */
+    align-items: flex-start; /* Align items to the start */
+    overflow-x: hidden;
 }
 
 #sidebar:hover {
-    left: 0;
+    width: 200px; /* Expanded width to show links */
 }
 
-.sidebar-label {
+#sidebar div {
+    margin-top: 10px;
+    display: flex; /* Use flex to align icon and text */
+    align-items: center; /* Vertically center icon and text */
+}
+
+#sidebar div a {
     color: white;
-    background-color: #f97316; /* Orange */
-    font-size: 16px;
-    width: 160px;
-    height: 50px;
-    margin: 10px 0;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    display: flex; /* Ensure flex for alignment */
+    align-items: center; /* Vertically center icon and text */
 }
 
-.sidebar-label:hover {
-    background-color: #bd4f00; /* Darker orange */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+#sidebar div a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-#sidebar a {
+#sidebar div i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 24px;
+    width: 24px;
+    text-align: center;
+}
+
+.icons {
+    display: flex; /* Use flex to align icons */
+    opacity: 1;
+    transition: opacity 0.3s ease 0.3s;
+}
+
+.links {
+    display: flex; /* Use flex to align links */
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, width 0.3s ease;
+    margin-left: 10px; /* Space between icons and links */
+}
+
+#sidebar:hover .icons {
+    opacity: 0;
+    width: 0; /* Collapse icon width on hover */
+    overflow: hidden; /* Hide icons when width is 0 */
+}
+
+#sidebar:hover .links {
+    opacity: 1;
+    width: auto; /* Expand to content width */
+    overflow: visible; /* Show content */
+    transition: opacity 0.3s ease 0.3s, width 0s 0.3s; /* Delay width expansion */
+}
+
+#sidebar a, i {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -90,6 +128,16 @@ h2 {
     border-radius: 14px;
     cursor: pointer;
     transition: background 0.5s;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#sidebar button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
 }
 
 #button:active {
@@ -100,17 +148,17 @@ h2 {
 
 .main-content {
     padding: 20px;
-    margin-left: 40px; /* Initial margin for sidebar */
+    margin-left: 60px;
     box-sizing: border-box;
     transition: margin-left 0.3s ease-in-out;
 }
 
 .sidebar-open .main-content {
-    margin-left: 200px; /* Adjust for sidebar width */
+    margin-left: 200px;
 }
 
 .description-box {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -120,24 +168,23 @@ h2 {
 }
 
 .description-box h3 {
-    margin-top: 0; /* Remove top margin */
-    font-size: 24px; /* Font size for the heading */
-   
+    margin-top: 0;
+    font-size: 24px;
 }
 
 .description-box p {
-    font-size: 16px; /* Font size for th e paragraph */
-    line-height: 1.5; /* Line height for better readability */
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .form {
     width: 100%;
-    height: 100vh;  
+    height: 100vh;
 }
 
 .photo-container {
     display: flex;
-    justify-content: space-around; /* Space out photos */
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -151,17 +198,17 @@ h2 {
 .photo-area img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s; /* Smooth scaling effect */
+    transition: transform 0.3s;
 }
 
 .photo-area img:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05);
 }
 
 .caption {
     margin-top: 10px;
     font-size: 16px;
-    color: #333; /* Dark text */
+    color: #333;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     border-radius: 5px;
@@ -169,11 +216,11 @@ h2 {
 }
 
 .footer {
-    background-color: #1e3a8a; /* Dark blue */
+    background-color: #1e3a8a;
     color: white;
     padding: 20px;
     text-align: center;
-    border-top: 5px solid #f97316; /* Orange top border */
+    border-top: 5px solid #f97316;
     width: 100%;
     box-sizing: border-box;
     position: fixed;
@@ -209,8 +256,8 @@ h2 {
 
 .photo-container1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -218,8 +265,8 @@ h2 {
 
 .photo-area1 {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -229,26 +276,26 @@ h2 {
 }
 
 #button {
-    display: inline-block; /* Make the link behave like a button */
-    background-color: #f97316; /* Orange background */
-    color: white !important; /* White text */
-    border: none; /* Remove default border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for size */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    background-color: #f97316;
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
 }
 
 #button:hover {
-    background-color: #bd4f00; /* Darker orange on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
+    background-color: #bd4f00;
+    transform: translateY(-2px);
 }
 
 #button:active {
-    background-color: #a84300; /* Even darker orange on click */
-    transform: translateY(0); /* Reset lift on click */
+    background-color: #a84300;
+    transform: translateY(0);
 }
