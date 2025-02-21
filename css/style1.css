@@ -33,11 +33,15 @@ h2 {
     color: #fff; /* White text */
 }
 
+.sidebar-container {
+    position: fixed;
+}
+
 #sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 60px; /* Initial width for icons only */
+    width: 50px; /* Width of the sidebar */
     height: 100%;
     background: #1e3a8a; /* Dark blue */
     color: white;
@@ -45,20 +49,22 @@ h2 {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     padding-top: 20px;
     z-index: 1000;
-    display: flex;
-    flex-direction: column; /* Stack icons and links vertically */
-    align-items: flex-start; /* Align items to the start */
+    display: inline-flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
     overflow-x: hidden;
 }
 
 #sidebar:hover {
-    width: 200px; /* Expanded width to show links */
+    width: 170px; /* Expanded width to show links */
 }
 
-#sidebar div {
-    margin-top: 10px;
-    display: flex; /* Use flex to align icon and text */
-    align-items: center; /* Vertically center icon and text */
+.icons {
+    display: inline-flex; /* Use flex to align icons */
+    flex-direction: column; /* Stack icons vertically */
+    opacity: 1;
+    transition: opacity 0.3s ease 0.3s;
+    align-items: flex-start; /* Center icons horizontally */
 }
 
 #sidebar div a {
@@ -68,9 +74,9 @@ h2 {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    white-space: nowrap;
-    display: flex; /* Ensure flex for alignment */
+    display: inline-flex; /* Ensure flex for alignment */
     align-items: center; /* Vertically center icon and text */
+    width: 140px;
 }
 
 #sidebar div a:hover {
@@ -78,38 +84,11 @@ h2 {
 }
 
 #sidebar div i {
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 15px; /* Space between icon and text */
     font-size: 24px;
     width: 24px;
     text-align: center;
-}
-
-.icons {
-    display: flex; /* Use flex to align icons */
-    opacity: 1;
-    transition: opacity 0.3s ease 0.3s;
-}
-
-.links {
-    display: flex; /* Use flex to align links */
-    opacity: 0;
-    width: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, width 0.3s ease;
-    margin-left: 10px; /* Space between icons and links */
-}
-
-#sidebar:hover .icons {
-    opacity: 0;
-    width: 0; /* Collapse icon width on hover */
-    overflow: hidden; /* Hide icons when width is 0 */
-}
-
-#sidebar:hover .links {
-    opacity: 1;
-    width: auto; /* Expand to content width */
-    overflow: visible; /* Show content */
-    transition: opacity 0.3s ease 0.3s, width 0s 0.3s; /* Delay width expansion */
+    color: white;
 }
 
 #sidebar a, i {
@@ -184,8 +163,10 @@ h2 {
 
 .photo-container {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     margin-top: 20px;
+    align-items: center;
 }
 
 .photo-area {

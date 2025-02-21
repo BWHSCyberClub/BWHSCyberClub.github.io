@@ -4,7 +4,7 @@ const title3 = "Join Now!";
 const title4 = "BWHS Cyber Club";
 const title5 = "Lots of Competitions";
 const title6 = "Participate and Enjoy!";
-const title7 = "You might even Win!!"
+const title7 = "Lots of Branches";
 
 document.title = title1;
 
@@ -36,8 +36,8 @@ function changeTitle() {
 
    const b = document.querySelector('.body');
    const s = document.getElementById('sidebar');
-   if (s.style.left == 0) {
-      b.style.left = 200;
+   if (s.style.width == 170) {
+      b.style.left = 170;
    } else {
 
    }
@@ -47,18 +47,4 @@ document.addEventListener("DOMContentLoaded", function() {
     const d = new Date();
     const usabledate = d.toDateString();
     document.getElementById("current_date").innerHTML = "Today is " + usabledate;
-
-    // Sidebar toggle logic
-    const sidebar = document.getElementById('sidebar');
-    const body = document.querySelector('.body');
-
-    sidebar.addEventListener('mouseenter', function() {
-        sidebar.style.left = '0';
-        body.classList.add('sidebar-open');
-    });
-
-    sidebar.addEventListener('mouseleave', function() {
-        sidebar.style.left = '-160px';
-        body.classList.remove('sidebar-open');
-    });
 });
