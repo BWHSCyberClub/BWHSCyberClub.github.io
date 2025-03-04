@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-    <html lang="en-US"> 
-        <head>
-            <meta charset="UTF-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <script src="js/script1.js"></script>
-            <link rel="stylesheet" href="css/style1.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <!--the thing above is needed for icons to work  -->
-            <title></title>
-            <link rel="icon" type="image/x-icon" href="https://iili.io/25HPGJn.png"/>
-        </head>
-        <body>
-            <div class="body">
-
-                <div class="sidebar-container">
-                    <div id="sidebar">
-                        <div class="icons">
-                            <a href="index"><i class="fa fa-home"></i>Home</a>
-                            <a href="resources"><i class="fa fa-gears"></i>Resources</a>
-                            <a href="info"><i class="fa fa-info"></i>Info</a>
-                            <a href="photoarea"><i class="fa fa-image"></i>Photo Area</a>
-                            <a href="calendar"><i class="fa fa-calendar"></i>Calendar</a>
-                            <a href="subdivisions"><i class="fa fa-sitemap"></i>Subdivisions</a>
-                            <a href="signup"><i class="fa fa-qrcode"></i>Sign Up</a>
-                        </div>
+<html lang="en-US"> 
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Briar Woods High School Cyber Club</title> <!-- Added a title -->
+        <link rel="icon" type="image/x-icon" href="https://iili.io/25HPGJn.png"/>
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/script1.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <nav class="sidebar-container">
+                <div id="sidebar">
+                    <div class="icons">
+                        <a href="index"><i class="fa fa-home"></i> Home</a>
+                        <a href="resources"><i class="fa fa-gears"></i> Resources</a>
+                        <a href="info"><i class="fa fa-info"></i> Info</a>
+                        <a href="photoarea"><i class="fa fa-image"></i> Photo Area</a>
+                        <a href="calendar"><i class="fa fa-calendar"></i> Calendar</a>
+                        <a href="subdivisions"><i class="fa fa-sitemap"></i> Subdivisions</a>
+                        <a href="signup"><i class="fa fa-qrcode"></i> Sign Up</a>
                     </div>
                 </div>
+            </nav>
 
-                <div class="main-content">
-                    <h1>Briar Woods High School Cyber Club</h1>
-                    <h2 id="current_date"></h2>
-                    <br>
-                    <div class="description-box">
-                        <h3>Description</h3>
-                        <p>Briar Woods High School Cyber Club educates young minds on how to use Cybersecurity
-                           skills to defend and fight against a multitude of threats. Mastery of cybersecurity 
-                           skills and different language skills opens up a new career path for students who want 
-                           to participate in the evolving technology and an IT field, offering new pathways for 
-                           the future. Cyber club allows students with similar minds to congregate and develop 
-                           skills which they can use in their future careers.
-                        </p>
+            <main class="main-content">
+                <h1>Briar Woods Cyber Club</h1>
+                <h2 id="current_date"></h2>
+                <br>
+                <section class="description-box">
+                    <h3>Description</h3>
+                    <p>
+                        Briar Woods High School Cyber Club educates young minds on how to use Cybersecurity skills to defend and fight against a multitude of threats. Mastery of cybersecurity skills and different language skills opens up a new career path for students who want to participate in the evolving technology and an IT field, offering new pathways for the future. Cyber club allows students with similar minds to congregate and develop skills which they can use in their future careers.
+                    </p>
+                </section>
+
+                <section class="photo-container">
+                    <div class="photo-area">
+                        <img src="photo1.jpg" alt="Error Image Failed To Load" loading="lazy">
+                        <div class="caption">(Caption for photo 1)</div>
                     </div>
-
-                    <div class="photo-container">
-                        <div class="photo-area">
-                            <img src="photo1.jpg" alt="Error Image Failed To Load" loading="lazy">
-                            <div class="caption">(Caption for photo 1)</div>
-                        </div>
-                        <div class="photo-area">
-                            <img src="photo2.jpg" alt="Error Image Failed To Load" loading="lazy">
-                            <div class="caption">(Caption for photo 2)</div>
-                        </div>
-                        <div class="photo-area">
-                            <img src="photo3.jpg" alt="Error Image Failed To Load" loading="lazy">
-                            <div class="caption">(Caption for photo 3)</div>
-                        </div>
+                    <div class="photo-area">
+                        <img src="photo2.jpg" alt="Error Image Failed To Load" loading="lazy">
+                        <div class="caption">(Caption for photo 2)</div>
                     </div>
-                </div>
+                    <div class="photo-area">
+                        <img src="photo3.jpg" alt="Error Image Failed To Load" loading="lazy">
+                        <div class="caption">(Caption for photo 3)</div>
+                    </div>
+                </section>
+            </main>
 
-                <div class="footer">
-                    <div class="footer-content">
-                        <div class="footer-label">Contact Us</div>
-                        <div class="footer-text">
-                            <a href="mailto:chris.starke@lcps.org">chris.starke@lcps.org</a>
-                        </div>  
-                        <div class="footer-text">
-                            <a id="button" href="https://www.lcps.org/o/bwh">Briar Woods High School</a>
-                        </div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-label">Contact Us</div>
+                    <div class="footer-text">
+                        <a href="mailto:chris.starke@lcps.org">chris.starke@lcps.org</a>
+                    </div>  
+                    <div class="footer-text">
+                        <a id="button" href="https://www.lcps.org/o/bwh">Briar Woods High School</a>
                     </div>
                 </div>
-            </div>
-        </body>
-    </html>
+            </footer>
+        </div>
+    </body>
+</html>
