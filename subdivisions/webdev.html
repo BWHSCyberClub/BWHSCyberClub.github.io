@@ -1,95 +1,51 @@
 <!DOCTYPE html>
-    <html lang="en-US">
-            
-        <head>
-            <meta charset="UTF-8"/>
-            <meta name="viewport" conetent="width=device-width" />
-            <script src="/js/script1.js"></script>
-            <link rel="stylesheet" href="/css/style1.css">
-            <title></title>
-            <link rel="icon" type="image/x-icon" href="https://iili.io/25HPGJn.png"/>
-        </head>
-    <body>
-         
-        <h1>Web development</h1>
-        <h2 id="current_Date"></h2>
-        <button></button>
-        <script>
-            const d = new Date();
-             usabledate = d.toDateString()
-            document.getElementById("current_Date").innerHTML ="Today is " + usabledate;
-        </script>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="/js/script1.js"></script>
+    <link rel="stylesheet" href="/css/style1.css" />
+    <title>Subdivisions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://iili.io/25HPGJn.png" />
+  </head>
+  <body>
+    <h1>
+      Subdivisions
+    </h1>
+    <div class="sidebar-container">
+      <div id="sidebar">
+          <div class="icons">
+              <a href="/index"><i class="fa fa-home"></i>Home</a>
+              <a href="/resources"><i class="fa fa-gears"></i>Resources</a>
+              <a href="/info"><i class="fa fa-info"></i>Info</a>
+              <a href="/photoarea"><i class="fa fa-image"></i>Photo Area</a>
+              <a href="/calendar"><i class="fa fa-calendar"></i>Calendar</a>
+              <a href="/subdivisions"><i class="fa fa-sitemap"></i>Subdivisions</a>
+              <a href="/signup"><i class="fa fa-qrcode"></i>Sign Up</a>
+          </div>
+      </div>
+  </div>
 
+  <main class="main-content">
+    <section class="description-box">
+        <h3>Description</h3>
+        <p>
+            The website development subdivision makes websites for the Cyber Club. The subdivision is responsible for the design and maintenance of the website.
+        </p>
+    </section>
+</main>
 
-
-        <!--- Fix This Animation Code-->
-        
-        <div class="sidebar-container">
-            <div id="sidebar">
-                <button><a href="/index.html" id="button">Home</a></button>
-                <div class="sidebar-label">Resources</div>
-                <ul class="sidebar-content">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="sidebar-label">Events</div>
-                <ul class="sidebar-content">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="sidebar-label">Info</div>
-                <ul class="sidebar-content">
-                    <li><button onclick="location.href('PhotoArea.html')">Photo Area</button></li>
-                    <li><button href="TimeLine.html">Timeline</button></li>
-                    <li></li>
-                <div class="sidebar-label">Subdivisions</div>
-                <ul class="sidebar-content">
-                    <li><a href="AI.html">AI</a></li>
-                    <li><a href="cyberPatriot.html">Cyber Patriot</a></li>
-                    <li></li>
-                </ul>
-            </div>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-label">Contact Us</div>
+        <div class="footer-text">chris.starke@lcps.org</div>
+        <div class="footer-text">
+          <button>
+            <a id="button" href="https://www.lcps.org/o/bwh">Briar Woods High School</a>
+          </button>
         </div>
-
-        <div class="main-content">
-            <div class="description-box">
-                <h3>Description</h3>
-                <p></p>
-            </div>
-        </div>
-
-        ...
-        <div style="text-align:right;">
-             <div class="photo-container">
-                 <div class="photo-area">
-                     <img src="photo1.jpg" height="300px" width="200px">
-                     <div class="caption">(Caption for photo 1)</div>
-                 </div>
-                 <div class="photo-area">
-                     <img src="photo2.jpg" height="300px" width="200px">
-                     <div class="caption">(Caption for photo 2)</div>
-                 </div>
-                 <div class="photo-area">
-                     <img src="photo3.jpg" height="300px" width="200px">
-                     <div class="caption">(Caption for photo 3)</div>
-                 </div>
-             </div>
-         </div>
-
-         
- ...
-
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-label">Contact Us</div>
-                <div class="footer-text">chris.starke@lcps.org</div>
-                <div class="footer-text">
-                    <button><a id="button" href="https://www.lcps.org/o/bwh">Briar Woods High School</a></button>
-                </div>
-            </div>
-        </div>
-
-    </body>
-    </html>
+      </div>
+    </div>
+  </body>
+</html>
