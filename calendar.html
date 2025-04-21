@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en-US">
-            
+    <html lang="en-US">    
         <head>
             <meta charset="UTF-8"/>
             <meta name="viewport" conetent="width=device-width" />
@@ -16,9 +15,7 @@
         <h2 id="current_Date"></h2>
         <button></button>
         <script>
-            const d = new Date();
-             usabledate = d.toDateString()
-            document.getElementById("current_Date").innerHTML ="Today is " + usabledate;
+            document.getElementById("current_Date").innerHTML ="Today is " + new Data().toDateString();
         </script>
 
 
@@ -44,7 +41,13 @@
    
         </div>
 
+        <div class="calendar" >
+            <iframe src="https://calendar.google.com/calendar/u/0/embed?color=%2392e1c0&src=c_f367eaaee461845270895bdcd0b4ba0d6021c3fe650f8b3e587c6487aa4343aa@group.calendar.google.com">
+                
+            <iframe>
+        <div>
 
+            
         <div class="footer">
             <div class="footer-content">
                 <div class="footer-label">Contact Us</div>

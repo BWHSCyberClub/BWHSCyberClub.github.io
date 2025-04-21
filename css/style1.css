@@ -14,6 +14,7 @@ body {
     background-size: 105%;
     color: #fff; /* White text for better contrast */
     font-family: 'Roboto', sans-serif; /* Modern font */
+    cursor: pointer;
 }
 
 .body {
@@ -61,7 +62,7 @@ h2 {
 }
 
 #sidebar:hover {
-    width: 170px; /* Expanded width to show links */
+    width: 170px;
 }
 
 .icons {
@@ -162,8 +163,9 @@ h2 {
 }
 
 .form {
-    width: 100%;
+    width: 50%;
     height: 100vh;
+    align-items: right;    
 }
 
 .photo-container {
@@ -284,4 +286,17 @@ h2 {
 #button:active {
     background-color: #a84300;
     transform: translateY(0);
+}
+
+.calendar {
+    width: 100%;
+    height: 100vh;
+}
+
+iframe {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 75vh;
+    border: none;
 }

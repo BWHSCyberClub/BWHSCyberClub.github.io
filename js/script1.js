@@ -1,3 +1,5 @@
+window.location.replace("https://sites.google.com/d/1riRhTQOjuFFlXEnQZD0JIbdNzQB39cLl/p/1XVuSdrJGKEMvQF3HYzZTajxfgGNaABeX/edit");
+
 const title1 = "Cyber Club | Briar Woods High School";
 const title2 = "The Best Club in BWHS";
 const title3 = "Join Now!";
